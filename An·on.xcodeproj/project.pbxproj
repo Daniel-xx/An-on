@@ -12,16 +12,18 @@
 		32D34B5D1F2BCCB900CE1F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B5B1F2BCCB900CE1F55 /* Main.storyboard */; };
 		32D34B5F1F2BCCB900CE1F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B5E1F2BCCB900CE1F55 /* Assets.xcassets */; };
 		32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */; };
+		32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32D34B541F2BCCB900CE1F55 /* An·on.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "An·on.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D34B541F2BCCB900CE1F55 /* An•on.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "An•on.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D34B571F2BCCB900CE1F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D34B591F2BCCB900CE1F55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32D34B5C1F2BCCB900CE1F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32D34B5E1F2BCCB900CE1F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D34B611F2BCCB900CE1F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D34B631F2BCCB900CE1F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		32D34B551F2BCCB900CE1F55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32D34B541F2BCCB900CE1F55 /* An·on.app */,
+				32D34B541F2BCCB900CE1F55 /* An•on.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +62,7 @@
 				32D34B5E1F2BCCB900CE1F55 /* Assets.xcassets */,
 				32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */,
 				32D34B631F2BCCB900CE1F55 /* Info.plist */,
+				32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */,
 			);
 			path = "An·on";
 			sourceTree = "<group>";
@@ -67,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32D34B531F2BCCB900CE1F55 /* An·on */ = {
+		32D34B531F2BCCB900CE1F55 /* An•on */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32D34B661F2BCCB900CE1F55 /* Build configuration list for PBXNativeTarget "An·on" */;
+			buildConfigurationList = 32D34B661F2BCCB900CE1F55 /* Build configuration list for PBXNativeTarget "An•on" */;
 			buildPhases = (
 				32D34B501F2BCCB900CE1F55 /* Sources */,
 				32D34B511F2BCCB900CE1F55 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "An·on";
+			name = "An•on";
 			productName = "An·on";
-			productReference = 32D34B541F2BCCB900CE1F55 /* An·on.app */;
+			productReference = 32D34B541F2BCCB900CE1F55 /* An•on.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32D34B531F2BCCB900CE1F55 /* An·on */,
+				32D34B531F2BCCB900CE1F55 /* An•on */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */,
+				32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */,
 				32D34B5F1F2BCCB900CE1F55 /* Assets.xcassets in Resources */,
 				32D34B5D1F2BCCB900CE1F55 /* Main.storyboard in Resources */,
 			);
@@ -295,7 +299,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32D34B661F2BCCB900CE1F55 /* Build configuration list for PBXNativeTarget "An·on" */ = {
+		32D34B661F2BCCB900CE1F55 /* Build configuration list for PBXNativeTarget "An•on" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32D34B671F2BCCB900CE1F55 /* Debug */,
