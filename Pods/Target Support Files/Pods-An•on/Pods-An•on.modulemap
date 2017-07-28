@@ -1,0 +1,6 @@
+framework module Pods_An_on {
+  umbrella header "Pods-An•on-umbrella.h"
+
+  export *
+  module * { export * }
+}
