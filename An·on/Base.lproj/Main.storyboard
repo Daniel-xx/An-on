@@ -56,6 +56,9 @@
                                             <constraint firstAttribute="height" constant="75" id="i1s-0n-bY1"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="facebookLogo"/>
+                                        <connections>
+                                            <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hef-R4-iQe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-HK-dEJ" customClass="DefaultButton" customModule="An_on" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="95" width="203" height="75"/>
