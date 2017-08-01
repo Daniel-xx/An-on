@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320831FC1F311FA300CA675C /* DimEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320831FB1F311FA300CA675C /* DimEffect.swift */; };
+		320831FE1F3125B300CA675C /* hideonTAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320831FD1F3125B300CA675C /* hideonTAP.swift */; };
 		3288C6C51F30E4980040C2C9 /* Righteous.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3288C6C41F30E4980040C2C9 /* Righteous.ttf */; };
 		3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */; };
 		3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320831FB1F311FA300CA675C /* DimEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimEffect.swift; sourceTree = "<group>"; };
+		320831FD1F3125B300CA675C /* hideonTAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hideonTAP.swift; sourceTree = "<group>"; };
 		3288C6C41F30E4980040C2C9 /* Righteous.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Righteous.ttf; sourceTree = "<group>"; };
 		3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
 		3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */,
+				320831FB1F311FA300CA675C /* DimEffect.swift */,
+				320831FD1F3125B300CA675C /* hideonTAP.swift */,
 			);
 			name = Extention;
 			sourceTree = "<group>";
@@ -273,8 +279,10 @@
 				3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */,
 				32D34B5A1F2BCCB900CE1F55 /* LoginVC.swift in Sources */,
 				3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */,
+				320831FC1F311FA300CA675C /* DimEffect.swift in Sources */,
 				32D34B581F2BCCB900CE1F55 /* AppDelegate.swift in Sources */,
 				32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */,
+				320831FE1F3125B300CA675C /* hideonTAP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

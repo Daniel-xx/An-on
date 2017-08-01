@@ -12,12 +12,13 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
     
     //Text Fields
     @IBOutlet weak var textFieldStack: UIStackView!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var largeIcon: UIImageView!
     
     //Login Picker Buttons
     @IBOutlet weak var loginPickerStack: UIStackView!
@@ -36,12 +37,26 @@ class LoginVC: UIViewController {
         self.passwordField.alpha = 0.0
         
         //Button Radius is done from DefaultButton class
-
+        self.emailField.delegate = self
+        self.passwordField.delegate = self
+        
+            self.hideKeyboardWhenTappedAround()
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        // Do not add a line break
+        return false    }
+    
     @IBAction func emailPickerBtnPressed(_ sender: Any) {
         self.emailField.fadeIn()
         self.passwordField.fadeInDel()
+        self.largeIcon.dimOut()
         self.loginPickerStack.setView(view: loginPickerStack, hidden: true)
         self.emailLoginStack.setView(view: emailLoginStack, hidden: false)
     }
@@ -49,8 +64,11 @@ class LoginVC: UIViewController {
     @IBAction func cancelBtnPressed(_ sender: Any) {
         self.emailField.fadeOut()
         self.passwordField.fadeOutDel()
+        self.largeIcon.dimIn()
         self.emailField.text = ""
+        self.emailField.placeholder = "Email Address"
         self.passwordField.text = ""
+        self.passwordField.placeholder = "Password"
         self.loginPickerStack.isHidden = false
         self.emailLoginStack.isHidden = true
     }
@@ -81,4 +99,34 @@ class LoginVC: UIViewController {
             })
     }
 
+    //Email Sign In
+    
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        
+        if (passwordField.text?.characters.count)! <= 6 {
+            passwordField.placeholder = "Must be 6 or more characters"
+            passwordField.text = ""
+        
+        } else {
+            
+        
+        if let email = emailField.text, let password = passwordField.text {
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in if error == nil {
+                print("DAN: EMAIL USER AUTH WITH FIR")
+            } else {
+                Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in if error != nil {
+                    print("DAN: Unable to auth with fir email")
+                    self.emailField.text = ""
+                    self.emailField.placeholder = "Invalid Email or"
+                    self.passwordField.text = ""
+                    self.passwordField.placeholder = "Invalid Password"
+                } else {
+                    print("DAN: Success created auth email fir")
+                }
+            })
+            }
+        })
+}
+}
+}
 }
