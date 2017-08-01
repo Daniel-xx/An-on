@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Righteous.ttf">
+            <string>Righteous-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
@@ -20,11 +26,155 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBG" translatesAutoresizingMaskIntoConstraints="NO" id="aFl-tM-Xgq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="p4r-ub-hHE">
+                                <rect key="frame" x="27.5" y="20" width="320" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="fJg-sj-WHC"/>
+                                    <constraint firstAttribute="width" constant="320" id="o11-g7-EJX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="express yourself" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYk-Id-Nah">
+                                <rect key="frame" x="0.0" y="110" width="375" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="aeJ-GK-oOE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Righteous-Regular" family="Righteous" pointSize="18"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wuc-52-fzp" userLabel="loginPickers">
+                                <rect key="frame" x="86" y="440" width="203" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXi-hE-ZDR" userLabel="facebook" customClass="DefaultButton" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="203" id="XXZ-1W-BMl"/>
+                                            <constraint firstAttribute="height" constant="75" id="i1s-0n-bY1"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="facebookLogo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-HK-dEJ" customClass="DefaultButton" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="95" width="203" height="75"/>
+                                        <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="8co-1q-ENb"/>
+                                            <constraint firstAttribute="width" constant="203" id="AoM-CS-pcP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Righteous-Regular" family="Righteous" pointSize="32"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" red="0.87049323320388794" green="0.87064296007156372" blue="0.87048381567001343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailPickerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOS-vC-WAU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't got an account already one will be created on log in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58L-mh-LPt">
+                                <rect key="frame" x="24" y="630" width="327" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.47445547580718994" green="0.4745410680770874" blue="0.47445005178451538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sy3-Yu-W8I" userLabel="emailLogin">
+                                <rect key="frame" x="86" y="440" width="203" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-rU-6Dy" customClass="DefaultButton" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="75"/>
+                                        <color key="backgroundColor" red="0.22529509663581848" green="0.34702998399734497" blue="0.59603768587112427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="203" id="DoN-xN-dvC"/>
+                                            <constraint firstAttribute="height" constant="75" id="hh1-pc-kbI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Righteous-Regular" family="Righteous" pointSize="32"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.87049323320388794" green="0.87064296007156372" blue="0.87048381567001343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MVG-sX-OwY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-ks-N4C" customClass="DefaultButton" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="95" width="203" height="75"/>
+                                        <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="B3b-YI-HEB"/>
+                                            <constraint firstAttribute="width" constant="203" id="L3X-yC-8BZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Righteous-Regular" family="Righteous" pointSize="32"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" red="0.87049323320000005" green="0.87064296009999997" blue="0.8704838157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tRD-qR-Pv5" userLabel="textFields">
+                                <rect key="frame" x="24" y="241" width="327" height="72"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W18-RD-khU" customClass="DefaultTextFields" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-88-Xqd" customClass="DefaultTextFields" customModule="An_on" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="42" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wuc-52-fzp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0FX-tu-Amg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="58L-mh-LPt" secondAttribute="trailing" constant="8" id="5vR-Au-ORo"/>
+                            <constraint firstItem="tRD-qR-Pv5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-56.5" id="784-KJ-U3f"/>
+                            <constraint firstItem="aFl-tM-Xgq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9t5-kd-ZcZ"/>
+                            <constraint firstItem="p4r-ub-hHE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AM7-Hj-lVH"/>
+                            <constraint firstItem="58L-mh-LPt" firstAttribute="top" secondItem="Wuc-52-fzp" secondAttribute="bottom" constant="20" id="Dbx-hY-leA"/>
+                            <constraint firstItem="58L-mh-LPt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="KDo-NX-e4A"/>
+                            <constraint firstItem="aFl-tM-Xgq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MMG-K2-4JA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="58L-mh-LPt" secondAttribute="bottom" constant="25" id="ZLv-pA-Wf3"/>
+                            <constraint firstItem="TYk-Id-Nah" firstAttribute="top" secondItem="p4r-ub-hHE" secondAttribute="bottom" id="bNm-2Q-cP5"/>
+                            <constraint firstItem="TYk-Id-Nah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mEv-ya-Ftf"/>
+                            <constraint firstItem="tRD-qR-Pv5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="o79-fk-Ntl"/>
+                            <constraint firstItem="p4r-ub-hHE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="p8h-8o-gof"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aFl-tM-Xgq" secondAttribute="bottom" id="pTB-Z7-oTS"/>
+                            <constraint firstAttribute="trailing" secondItem="TYk-Id-Nah" secondAttribute="trailing" id="qdJ-2i-q2u"/>
+                            <constraint firstItem="58L-mh-LPt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r2p-L4-biW"/>
+                            <constraint firstItem="Sy3-Yu-W8I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tu9-cc-Pt0"/>
+                            <constraint firstAttribute="trailing" secondItem="aFl-tM-Xgq" secondAttribute="trailing" id="u2E-aS-92O"/>
+                            <constraint firstItem="58L-mh-LPt" firstAttribute="top" secondItem="Sy3-Yu-W8I" secondAttribute="bottom" constant="20" id="y7f-Vh-kur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tRD-qR-Pv5" secondAttribute="trailing" constant="8" id="zwC-Vc-DOd"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="cancelbutton" destination="gNg-rU-6Dy" id="Vnm-C7-yKu"/>
+                        <outlet property="emailField" destination="W18-RD-khU" id="Myy-Pr-cZE"/>
+                        <outlet property="emailLoginStack" destination="Sy3-Yu-W8I" id="UCa-XL-Jce"/>
+                        <outlet property="emailPicker" destination="8cr-HK-dEJ" id="z0y-RK-Sz8"/>
+                        <outlet property="facebookPicker" destination="kXi-hE-ZDR" id="U99-BS-p0j"/>
+                        <outlet property="loginButton" destination="Pcb-ks-N4C" id="hdG-m0-4gI"/>
+                        <outlet property="loginPickerStack" destination="Wuc-52-fzp" id="Eyw-j7-bkw"/>
+                        <outlet property="passwordField" destination="jxt-88-Xqd" id="wud-yG-bVP"/>
+                        <outlet property="textFieldStack" destination="tRD-qR-Pv5" id="RQ7-Mf-drZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="158.77061469265368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebookLogo" width="600" height="225"/>
+        <image name="loginBG" width="360" height="640"/>
+        <image name="logo" width="360" height="100"/>
+    </resources>
 </document>

@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3288C6C51F30E4980040C2C9 /* Righteous.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3288C6C41F30E4980040C2C9 /* Righteous.ttf */; };
+		3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */; };
+		3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */; };
 		32D34B581F2BCCB900CE1F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D34B571F2BCCB900CE1F55 /* AppDelegate.swift */; };
 		32D34B5A1F2BCCB900CE1F55 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D34B591F2BCCB900CE1F55 /* LoginVC.swift */; };
 		32D34B5D1F2BCCB900CE1F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B5B1F2BCCB900CE1F55 /* Main.storyboard */; };
 		32D34B5F1F2BCCB900CE1F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B5E1F2BCCB900CE1F55 /* Assets.xcassets */; };
 		32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */; };
 		32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */; };
+		32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */; };
 		E525F11D10BB8176F42F95A6 /* Pods_An_on.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCFA737187D1E1DED958CA2 /* Pods_An_on.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3288C6C41F30E4980040C2C9 /* Righteous.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Righteous.ttf; sourceTree = "<group>"; };
+		3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
+		3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		32D34B541F2BCCB900CE1F55 /* An•on.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "An•on.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D34B571F2BCCB900CE1F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D34B591F2BCCB900CE1F55 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -25,6 +32,7 @@
 		32D34B611F2BCCB900CE1F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D34B631F2BCCB900CE1F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextFields.swift; sourceTree = "<group>"; };
 		608ACD6673347AB4F6E0BEB7 /* Pods-An•on.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.debug.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.debug.xcconfig"; sourceTree = "<group>"; };
 		B60D8FE3D52CD38250B1C0F2 /* Pods-An•on.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.release.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.release.xcconfig"; sourceTree = "<group>"; };
 		CDCFA737187D1E1DED958CA2 /* Pods_An_on.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_An_on.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32198FDD1F2E2481000D571D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3288C6C41F30E4980040C2C9 /* Righteous.ttf */,
+			);
+			name = Fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3288C6C61F30F2A00040C2C9 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */,
+			);
+			name = Extention;
+			sourceTree = "<group>";
+		};
 		32D34B4B1F2BCCB900CE1F55 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +88,7 @@
 		32D34B561F2BCCB900CE1F55 /* An·on */ = {
 			isa = PBXGroup;
 			children = (
+				3288C6C61F30F2A00040C2C9 /* Extention */,
 				32D34B6D1F2BD54600CE1F55 /* Controller */,
 				32D34B6C1F2BD54100CE1F55 /* Model */,
 				32D34B6B1F2BD53A00CE1F55 /* View */,
@@ -72,6 +98,7 @@
 				32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */,
 				32D34B631F2BCCB900CE1F55 /* Info.plist */,
 				32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */,
+				32198FDD1F2E2481000D571D /* Fonts */,
 			);
 			path = "An·on";
 			sourceTree = "<group>";
@@ -79,6 +106,8 @@
 		32D34B6B1F2BD53A00CE1F55 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */,
+				32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -180,6 +209,7 @@
 			files = (
 				32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */,
 				32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */,
+				3288C6C51F30E4980040C2C9 /* Righteous.ttf in Resources */,
 				32D34B5F1F2BCCB900CE1F55 /* Assets.xcassets in Resources */,
 				32D34B5D1F2BCCB900CE1F55 /* Main.storyboard in Resources */,
 			);
@@ -240,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */,
 				32D34B5A1F2BCCB900CE1F55 /* LoginVC.swift in Sources */,
+				3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */,
 				32D34B581F2BCCB900CE1F55 /* AppDelegate.swift in Sources */,
+				32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMGQR99D5K;
 				INFOPLIST_FILE = "An·on/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielJacob.An-on";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMGQR99D5K;
 				INFOPLIST_FILE = "An·on/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielJacob.An-on";
 				PRODUCT_NAME = "$(TARGET_NAME)";
