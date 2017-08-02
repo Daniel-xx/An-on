@@ -181,11 +181,50 @@
                         <outlet property="loginPickerStack" destination="Wuc-52-fzp" id="Eyw-j7-bkw"/>
                         <outlet property="passwordField" destination="jxt-88-Xqd" id="wud-yG-bVP"/>
                         <outlet property="textFieldStack" destination="tRD-qR-Pv5" id="RQ7-Mf-drZ"/>
+                        <segue destination="Z0t-xW-esf" kind="show" identifier="goToFeed" id="57A-oQ-qvy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="158.77061469265368"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="DLz-Jp-0O0">
+            <objects>
+                <viewController id="Z0t-xW-esf" customClass="FeedVC" customModule="An_on" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48x-Nk-0Aa"/>
+                        <viewControllerLayoutGuide type="bottom" id="JJ4-yW-ROf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ap3-6e-n8G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-H6-J6x">
+                                <rect key="frame" x="164" y="56" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="YQb-Wa-ThH"/>
+                                    <constraint firstAttribute="height" constant="30" id="b82-DB-K6o"/>
+                                </constraints>
+                                <state key="normal" title="sign out"/>
+                                <connections>
+                                    <action selector="signOutPressed:" destination="Z0t-xW-esf" eventType="touchUpInside" id="VCo-x5-kwP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XJB-H6-J6x" firstAttribute="top" secondItem="48x-Nk-0Aa" secondAttribute="bottom" constant="36" id="LbZ-LX-LZN"/>
+                            <constraint firstItem="XJB-H6-J6x" firstAttribute="leading" secondItem="Ap3-6e-n8G" secondAttribute="leadingMargin" constant="148" id="Rnh-UB-8FB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signOut" id="5Lj-cs-1Ac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTm-ac-sd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="159"/>
         </scene>
     </scenes>
     <resources>

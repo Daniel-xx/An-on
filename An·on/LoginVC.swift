@@ -11,6 +11,7 @@ import Foundation
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
@@ -33,6 +34,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.emailField.alpha = 0.0
         self.passwordField.alpha = 0.0
         
@@ -41,6 +43,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.passwordField.delegate = self
         
             self.hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -95,6 +103,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             print("DAN: Unable to auth")
         } else {
             print("DAN: Authenticated with FIR")
+            if let user = user {
+            self.completeSignIn(id: user.uid)
+                }
             }
             })
     }
@@ -113,6 +124,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         if let email = emailField.text, let password = passwordField.text {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in if error == nil {
                 print("DAN: EMAIL USER AUTH WITH FIR")
+                if let user = user {
+                    self.completeSignIn(id: user.uid) }
             } else {
                 Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in if error != nil {
                     print("DAN: Unable to auth with fir email")
@@ -122,6 +135,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     self.passwordField.placeholder = "Invalid Password"
                 } else {
                     print("DAN: Success created auth email fir")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)}
                 }
             })
             }
@@ -129,4 +144,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 }
 }
 }
+    
+    func completeSignIn(id: String) {
+        KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("DAN: Saved to keychain")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
 }
