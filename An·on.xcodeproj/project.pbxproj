@@ -13,7 +13,6 @@
 		32560F2B1F31DAA2001274F8 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32560F2A1F31DAA2001274F8 /* FeedVC.swift */; };
 		32560F2D1F31E2CA001274F8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32560F2C1F31E2CA001274F8 /* SettingsVC.swift */; };
 		32560F2F1F31EA3C001274F8 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32560F2E1F31EA3C001274F8 /* MaterialView.swift */; };
-		32560F311F31ED1C001274F8 /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32560F301F31ED1C001274F8 /* NewPostVC.swift */; };
 		3288C6C51F30E4980040C2C9 /* Righteous.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3288C6C41F30E4980040C2C9 /* Righteous.ttf */; };
 		3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */; };
 		3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */; };
@@ -24,6 +23,7 @@
 		32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */; };
 		32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */; };
 		32D771E21F326EB5007A4529 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D771E11F326EB5007A4529 /* CircleImage.swift */; };
+		32D771E41F327940007A4529 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D771E31F327940007A4529 /* PostCell.swift */; };
 		32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */; };
 		E525F11D10BB8176F42F95A6 /* Pods_An_on.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCFA737187D1E1DED958CA2 /* Pods_An_on.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,6 @@
 		32560F2A1F31DAA2001274F8 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		32560F2C1F31E2CA001274F8 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		32560F2E1F31EA3C001274F8 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
-		32560F301F31ED1C001274F8 /* NewPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
 		3288C6C41F30E4980040C2C9 /* Righteous.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Righteous.ttf; sourceTree = "<group>"; };
 		3288C6C71F30F2B70040C2C9 /* FadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
 		3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		32D34B631F2BCCB900CE1F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32D771E11F326EB5007A4529 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		32D771E31F327940007A4529 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextFields.swift; sourceTree = "<group>"; };
 		608ACD6673347AB4F6E0BEB7 /* Pods-An•on.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.debug.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.debug.xcconfig"; sourceTree = "<group>"; };
 		B60D8FE3D52CD38250B1C0F2 /* Pods-An•on.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.release.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 				32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */,
 				32560F2E1F31EA3C001274F8 /* MaterialView.swift */,
 				32D771E11F326EB5007A4529 /* CircleImage.swift */,
+				32D771E31F327940007A4529 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -146,7 +147,6 @@
 				32D34B591F2BCCB900CE1F55 /* LoginVC.swift */,
 				32560F2A1F31DAA2001274F8 /* FeedVC.swift */,
 				32560F2C1F31E2CA001274F8 /* SettingsVC.swift */,
-				32560F301F31ED1C001274F8 /* NewPostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -301,8 +301,8 @@
 				3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */,
 				32560F2F1F31EA3C001274F8 /* MaterialView.swift in Sources */,
 				320831FC1F311FA300CA675C /* DimEffect.swift in Sources */,
+				32D771E41F327940007A4529 /* PostCell.swift in Sources */,
 				32D34B581F2BCCB900CE1F55 /* AppDelegate.swift in Sources */,
-				32560F311F31ED1C001274F8 /* NewPostVC.swift in Sources */,
 				32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */,
 				320831FE1F3125B300CA675C /* hideonTAP.swift in Sources */,
 				32560F291F31D5C6001274F8 /* Constants.swift in Sources */,

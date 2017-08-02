@@ -14,7 +14,7 @@ class CircleImage: UIImageView {
         super.awakeFromNib()
         
         layer.shadowColor = UIColor.gray.cgColor
-        layer.shadowOpacity = 0.8
+        layer.shadowOpacity = 0.0
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
     }
@@ -23,6 +23,7 @@ class CircleImage: UIImageView {
         super.layoutSubviews()
         
         layer.cornerRadius = self.frame.width / 2
+        clipsToBounds = true
     }
 
 }
