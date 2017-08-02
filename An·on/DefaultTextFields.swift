@@ -13,9 +13,9 @@ class DefaultTextFields: UITextField {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layer.borderColor = UIColor.black.cgColor
-        layer.borderWidth = 1
-        layer.backgroundColor = UIColor.black.cgColor
+        layer.borderColor = UIColor.gray.cgColor
+        layer.borderWidth = 0
+        layer.backgroundColor = UIColor.gray.cgColor
         
     }
     

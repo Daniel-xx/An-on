@@ -23,6 +23,7 @@
 		32D34B5F1F2BCCB900CE1F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B5E1F2BCCB900CE1F55 /* Assets.xcassets */; };
 		32D34B621F2BCCB900CE1F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B601F2BCCB900CE1F55 /* LaunchScreen.storyboard */; };
 		32D34B6A1F2BD19600CE1F55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */; };
+		32D771E21F326EB5007A4529 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D771E11F326EB5007A4529 /* CircleImage.swift */; };
 		32F805D61F31011E00BA4CE9 /* DefaultTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */; };
 		E525F11D10BB8176F42F95A6 /* Pods_An_on.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCFA737187D1E1DED958CA2 /* Pods_An_on.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		32D34B611F2BCCB900CE1F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D34B631F2BCCB900CE1F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D34B691F2BD19600CE1F55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32D771E11F326EB5007A4529 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTextFields.swift; sourceTree = "<group>"; };
 		608ACD6673347AB4F6E0BEB7 /* Pods-An•on.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.debug.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.debug.xcconfig"; sourceTree = "<group>"; };
 		B60D8FE3D52CD38250B1C0F2 /* Pods-An•on.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-An•on.release.xcconfig"; path = "Pods/Target Support Files/Pods-An•on/Pods-An•on.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				3288C6CB1F30FD600040C2C9 /* DefaultButton.swift */,
 				32F805D51F31011E00BA4CE9 /* DefaultTextFields.swift */,
 				32560F2E1F31EA3C001274F8 /* MaterialView.swift */,
+				32D771E11F326EB5007A4529 /* CircleImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				32560F2B1F31DAA2001274F8 /* FeedVC.swift in Sources */,
 				3288C6CC1F30FD600040C2C9 /* DefaultButton.swift in Sources */,
 				32D34B5A1F2BCCB900CE1F55 /* LoginVC.swift in Sources */,
+				32D771E21F326EB5007A4529 /* CircleImage.swift in Sources */,
 				3288C6C81F30F2B70040C2C9 /* FadeInOut.swift in Sources */,
 				32560F2F1F31EA3C001274F8 /* MaterialView.swift in Sources */,
 				320831FC1F311FA300CA675C /* DimEffect.swift in Sources */,
