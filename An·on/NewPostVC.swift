@@ -1,5 +1,5 @@
 //
-//  FeedVC.swift
+//  NewPostVC.swift
 //  An·on
 //
 //  Created by Daniel Travers on 02/08/2017.
@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import SwiftKeychainWrapper
-import Firebase
 
-class FeedVC: UIViewController {
+class NewPostVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+
 
 
 }
