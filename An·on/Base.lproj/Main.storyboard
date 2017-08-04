@@ -411,7 +411,7 @@
                             <constraint firstItem="3l0-Wb-WBr" firstAttribute="leading" secondItem="Ap3-6e-n8G" secondAttribute="leading" id="wYZ-Rd-A7H"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed" id="yFq-z5-0xT"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed" id="VAx-OO-YwS"/>
                     <navigationItem key="navigationItem" title="Title" id="ujA-wc-sxo"/>
                     <connections>
                         <outlet property="tableview" destination="bWe-PK-r7h" id="nsi-TC-r68"/>

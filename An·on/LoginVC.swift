@@ -104,7 +104,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         } else {
             print("DAN: Authenticated with FIR")
             if let user = user {
-            self.completeSignIn(id: user.uid)
+                let userData = ["provider": credential.provider]
+            self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
             })
@@ -125,7 +126,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in if error == nil {
                 print("DAN: EMAIL USER AUTH WITH FIR")
                 if let user = user {
-                    self.completeSignIn(id: user.uid) }
+                    let userData = ["provider": user.providerID]
+                    self.completeSignIn(id: user.uid, userData: userData) }
             } else {
                 Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in if error != nil {
                     print("DAN: Unable to auth with fir email")
@@ -136,7 +138,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 } else {
                     print("DAN: Success created auth email fir")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)}
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)}
                 }
             })
             }
@@ -145,7 +148,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 }
 }
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("DAN: Saved to keychain")
         performSegue(withIdentifier: "goToFeed", sender: nil)
